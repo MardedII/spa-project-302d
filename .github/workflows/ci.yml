@@ -11,7 +11,7 @@ on:
 # los jobs son trabajos a ejecutar:
 jobs:
   front-build:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
 
     defaults:
       run:
@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout repository (git clone)
-        uses: actions/Checkout@v4
+        uses: actions/checkout@v4
 
       - name: Setup node (instalar node)
         uses: actions/setup-node@v4
